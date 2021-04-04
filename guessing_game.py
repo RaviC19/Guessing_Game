@@ -17,7 +17,8 @@ while True:
         elif guess > random_number:
             print(f"Your guess of {guess} is too high! Think smaller")
             guess = int(input("Guess a number between 1 and 10 "))
-    print(f"Your guess of {guess} was correct, you won the game!")
+        else:
+            print(f"Your guess of {guess} was correct, you won the game!")
 
     repeat = input("Do you want to play again? Enter yes or no ")
     if repeat == "yes":
